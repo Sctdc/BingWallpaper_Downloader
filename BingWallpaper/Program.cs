@@ -11,7 +11,7 @@ namespace BingWallpaper
 {
     static class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             string requestUri = @"http://www.bing.com/HPImageArchive.aspx?format=js&mbl=1&idx=0&n=1&video=1";
             string picFilePath = "./Wallpaper/";

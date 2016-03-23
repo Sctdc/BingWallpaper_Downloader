@@ -10,3 +10,13 @@ C:\Users\User\Desktop\BingWallpaper\BingWallpaper\obj\Release\BingWallpaper.pdb
 C:\Users\User\Desktop\BingWallpaper\BingWallpaper\bin\Release\BingWallpaper.exe.CodeAnalysisLog.xml
 C:\Users\User\Desktop\BingWallpaper\BingWallpaper\bin\Release\BingWallpaper.exe.lastcodeanalysissucceeded
 C:\Users\User\Desktop\BingWallpaper\BingWallpaper\obj\Release\BingWallpaper.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\BingWallpaper_Downloader\BingWallpaper\bin\Release\BingWallpaper.exe.config
+C:\Users\User\Desktop\BingWallpaper_Downloader\BingWallpaper\obj\Release\BingWallpaper.exe
+C:\Users\User\Desktop\BingWallpaper_Downloader\BingWallpaper\obj\Release\BingWallpaper.pdb
+C:\Users\User\Desktop\BingWallpaper_Downloader\BingWallpaper\bin\Release\BingWallpaper.exe
+C:\Users\User\Desktop\BingWallpaper_Downloader\BingWallpaper\bin\Release\BingWallpaper.pdb
+C:\Users\User\Desktop\BingWallpaper_Downloader\BingWallpaper\bin\Release\Newtonsoft.Json.dll
+C:\Users\User\Desktop\BingWallpaper_Downloader\BingWallpaper\bin\Release\Newtonsoft.Json.xml
+C:\Users\User\Desktop\BingWallpaper_Downloader\BingWallpaper\obj\Release\BingWallpaper.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\BingWallpaper_Downloader\BingWallpaper\obj\Release\BingWallpaper.Properties.Resources.resources
+C:\Users\User\Desktop\BingWallpaper_Downloader\BingWallpaper\obj\Release\BingWallpaper.csproj.GenerateResource.Cache
