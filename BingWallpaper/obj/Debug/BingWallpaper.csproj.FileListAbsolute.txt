@@ -1,0 +1,14 @@
+C:\Users\User\Desktop\BingWallpaper\BingWallpaper\obj\Debug\BingWallpaper.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\BingWallpaper\BingWallpaper\obj\Debug\BingWallpaper.MainForm.resources
+C:\Users\User\Desktop\BingWallpaper\BingWallpaper\obj\Debug\BingWallpaper.Properties.Resources.resources
+C:\Users\User\Desktop\BingWallpaper\BingWallpaper\obj\Debug\BingWallpaper.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\BingWallpaper\BingWallpaper\bin\Debug\BingWallpaper.exe.config
+C:\Users\User\Desktop\BingWallpaper\BingWallpaper\bin\Debug\BingWallpaper.exe
+C:\Users\User\Desktop\BingWallpaper\BingWallpaper\bin\Debug\BingWallpaper.pdb
+C:\Users\User\Desktop\BingWallpaper\BingWallpaper\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Desktop\BingWallpaper\BingWallpaper\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\Desktop\BingWallpaper\BingWallpaper\obj\Debug\BingWallpaper.exe
+C:\Users\User\Desktop\BingWallpaper\BingWallpaper\obj\Debug\BingWallpaper.pdb
+C:\Users\User\Desktop\BingWallpaper_Downloader\BingWallpaper\bin\Debug\BingWallpaper.exe.config
+C:\Users\User\Desktop\BingWallpaper_Downloader\BingWallpaper\obj\Debug\BingWallpaper.exe
+C:\Users\User\Desktop\BingWallpaper_Downloader\BingWallpaper\obj\Debug\BingWallpaper.pdb

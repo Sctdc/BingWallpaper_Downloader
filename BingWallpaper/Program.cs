@@ -14,8 +14,8 @@ namespace BingWallpaper
         static void Main(string[] args)
         {
             string requestUri = @"http://www.bing.com/HPImageArchive.aspx?format=js&mbl=1&idx=0&n=1&video=1";
-            string picPath = "./Wallpaper/";
-            string fileName = string.Empty;
+            string picFilePath = "./Wallpaper/";
+            string picFileName = string.Empty;
             var dicts = new Dictionary<string, object>();
 
             try
@@ -35,7 +35,7 @@ namespace BingWallpaper
             try
             {
                 var images = (JArray)dicts["images"];
-                fileName = picPath + images[0]["startdate"].ToString() + ".jpg";
+                picFileName = picFilePath + images[0]["startdate"].ToString() + ".jpg";
                 requestUri = images[0]["url"].ToString();
             }
             catch (Exception)
@@ -46,7 +46,7 @@ namespace BingWallpaper
 
             try
             {
-                if (File.Exists(fileName))
+                if (File.Exists(picFileName))
                 {
                     ErrorMessage("背景图已存在，无需下载！");
                     return;
@@ -54,7 +54,7 @@ namespace BingWallpaper
                 else
                 {
                     var client = new WebClient();
-                    client.DownloadFile(requestUri, fileName);
+                    client.DownloadFile(requestUri, picFileName);
                 }
             }
             catch (Exception)
