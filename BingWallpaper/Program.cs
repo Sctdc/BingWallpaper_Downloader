@@ -15,6 +15,7 @@ namespace BingWallpaper
         {
             string requestUri = @"http://www.bing.com/HPImageArchive.aspx?format=js&mbl=1&idx=0&n=1&video=1";
             string picFilePath = "./Wallpaper/";
+            string startDate = string.Empty;
             string picFileName = string.Empty;
             var dicts = new Dictionary<string, object>();
 
@@ -35,13 +36,27 @@ namespace BingWallpaper
             try
             {
                 var images = (JArray)dicts["images"];
-                picFileName = picFilePath + images[0]["startdate"].ToString() + ".jpg";
+                startDate = images[0]["startdate"].ToString();
+                picFileName = picFilePath + startDate + ".jpg";
                 requestUri = images[0]["url"].ToString();
             }
             catch (Exception)
             {
                 ErrorMessage("背景图信息解析错误！");
                 return;
+            }
+
+            if (!Directory.Exists(picFilePath))
+            {
+                try
+                {
+                    Directory.CreateDirectory(picFilePath);
+                }
+                catch (Exception)
+                {
+                    ErrorMessage("建立背景图下载目录错误！");
+                    return;
+                }
             }
 
             try
@@ -62,6 +77,7 @@ namespace BingWallpaper
                 ErrorMessage("背景图保存错误！");
                 return;
             }
+            MessageBox.Show("背景图 <" + startDate + "> 下载完毕!");
         }
 
         private static void ErrorMessage(string message)
