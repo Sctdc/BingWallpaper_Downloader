@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Net;
 using System.Text;
+using System.Drawing;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -30,7 +31,7 @@ namespace BingWallpaper
             }
             catch (Exception)
             {
-                ErrorMessage("背景图信息获取错误！");
+                MyMessage("背景图信息获取错误！");
                 return;
             }
 
@@ -44,7 +45,7 @@ namespace BingWallpaper
             }
             catch (Exception)
             {
-                ErrorMessage("背景图信息解析错误！");
+                MyMessage("背景图信息解析错误！");
                 return;
             }
  
@@ -57,7 +58,7 @@ namespace BingWallpaper
                 }
                 catch (Exception)
                 {
-                    ErrorMessage("建立背景图下载目录错误！");
+                    MyMessage("建立背景图下载目录错误！");
                     return;
                 }
             }
@@ -67,8 +68,8 @@ namespace BingWallpaper
             {
                 if (File.Exists(picFileName))
                 {
-                    ErrorMessage("背景图已存在，无需下载！");
-                    return;
+                    MyMessage("背景图已存在，无需下载！");
+                    // return;
                 }
                 else
                 {
@@ -78,17 +79,22 @@ namespace BingWallpaper
             }
             catch (Exception)
             {
-                ErrorMessage("背景图保存错误！");
+                MyMessage("背景图保存错误！");
                 return;
             }
 
-            // DesktopWallpaperSet.Set(picFileName);
-            MessageBox.Show("背景图 <" + startDate + "> 下载完毕!");
+            // 将背景图转为BMP格式，并设为系统桌面背景
+            var image = Image.FromFile(picFileName);
+            picFileName = picFilePath + "Wallpaper.bmp";
+            image.Save(picFileName, System.Drawing.Imaging.ImageFormat.Bmp);
+            DesktopWallpaperSet.Set(picFileName);
+
+            MyMessage("本日必应背景图 <" + startDate + "> 下载完毕!");
         }
 
-        private static void ErrorMessage(string message)
+        private static void MyMessage(string message)
         {
-            MessageBox.Show(message, "注意", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show(message, "注意", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
