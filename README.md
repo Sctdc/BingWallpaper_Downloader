@@ -1,2 +1,2 @@
-# BingWallpaper_Downloader
-BingWallpaper Downloader
+# 必应背景图下载器
+程序运行后，将下载本日必应背景图至子目录Wallpaper下，文件名为类似"20160326.jpg"格式。你可手动将系统桌面背景指向Wallpaper目录。
