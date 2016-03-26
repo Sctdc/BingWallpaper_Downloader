@@ -18,7 +18,7 @@ namespace BingWallpaper
             string startDate = string.Empty;
             string picFileName = string.Empty;
             var dicts = new Dictionary<string, object>();
-
+            // 获取背景图信息
             try
             {
                 var request = WebRequest.Create(requestUri);
@@ -32,7 +32,7 @@ namespace BingWallpaper
                 ErrorMessage("背景图信息获取错误！");
                 return;
             }
-
+            // 解析背景图下载地址
             try
             {
                 var images = (JArray)dicts["images"];
@@ -45,7 +45,7 @@ namespace BingWallpaper
                 ErrorMessage("背景图信息解析错误！");
                 return;
             }
-
+            // 判断下载目录是否存在，若不存在建立目录
             if (!Directory.Exists(picFilePath))
             {
                 try
@@ -58,7 +58,7 @@ namespace BingWallpaper
                     return;
                 }
             }
-
+            // 下载背景图
             try
             {
                 if (File.Exists(picFileName))
