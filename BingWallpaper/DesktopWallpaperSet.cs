@@ -16,7 +16,7 @@ namespace BingWallpaper
         {
             SystemParametersInfo(
                 SPI_SETDESKWALLPAPER,
-                0,
+                1,
                 Path.GetFullPath(path),
                 SPIF_UPDATEINIFILE | SPIF_SENDWININICHANGE);
         }

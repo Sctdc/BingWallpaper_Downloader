@@ -66,12 +66,7 @@ namespace BingWallpaper
             // 下载背景图
             try
             {
-                if (File.Exists(picFileName))
-                {
-                    MyMessage("背景图已存在，无需下载！");
-                    // return;
-                }
-                else
+                if (!File.Exists(picFileName))
                 {
                     var client = new WebClient();
                     client.DownloadFile(requestUri, picFileName);
