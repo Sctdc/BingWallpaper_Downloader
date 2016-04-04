@@ -4,4 +4,4 @@
 
 必应背景图来源为默认当地市场，以及最高分辨率。
 
-执行文件为BingWallpaper\bin\Release\BingWallpaper.exe。 
+可直接执行下载包中“BingWallpaper\bin\Release\BingWallpaper.exe”。 
