@@ -15,7 +15,7 @@ namespace BingWallpaper
         static void Main()
         {
             string requestUri = @"http://www.bing.com/HPImageArchive.aspx?format=js&mbl=1&idx=0&n=1&video=1";
-            string picFilePath = "./Wallpaper/";
+            string picFilePath = "./" + DateTime.Now.Year.ToString() + "/";
             string startDate = string.Empty;
             string picFileName = string.Empty;
             var dicts = new Dictionary<string, object>();
@@ -80,7 +80,7 @@ namespace BingWallpaper
 
             // 将背景图转为BMP格式，并设为系统桌面背景
             var image = Image.FromFile(picFileName);
-            picFileName = picFilePath + "Wallpaper.bmp";
+            picFileName = "Wallpaper.bmp";
             image.Save(picFileName, System.Drawing.Imaging.ImageFormat.Bmp);
             DesktopWallpaperSet.Set(picFileName);
 
